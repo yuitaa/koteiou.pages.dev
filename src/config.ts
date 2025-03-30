@@ -15,8 +15,8 @@ export const siteConfig: SiteConfig = {
     fixed: true,     // Hide the theme color picker for visitors
   },
   banner: {
-    enable: false,
-    src: 'assets/images/demo-banner.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    enable: true,
+    src: 'assets/images/banner.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: false,         // Display the credit text of the banner image
@@ -47,16 +47,6 @@ export const navBarConfig: NavBarConfig = {
     {
       name: '🎥 Twitch',
       url: 'https://www.twitch.tv/yuitaaaaa',
-      external: true,
-    },
-    {
-      name: '📼 YouTube',
-      url: 'https://www.youtube.com/@yuita',
-      external: true,
-    },
-    {
-      name: '🏆 speedrun.com',
-      url: 'https://www.speedrun.com/ja-JP/users/yuita_',
       external: true,
     },
   ],
