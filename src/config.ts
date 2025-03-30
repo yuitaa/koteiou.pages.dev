@@ -39,16 +39,7 @@ export const navBarConfig: NavBarConfig = {
   links: [
     LinkPreset.Home,
     LinkPreset.About,
-    {
-      name: '🐦 Twitter',
-      url: 'https://twitter.com/koteiou',
-      external: true,
-    },
-    {
-      name: '🎥 Twitch',
-      url: 'https://www.twitch.tv/yuitaaaaa',
-      external: true,
-    },
+    LinkPreset.Archive,
   ],
 }
 
