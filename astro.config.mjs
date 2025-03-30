@@ -23,7 +23,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 export default defineConfig({
   site: "https://fuwari.vercel.app/",
   base: "/",
-  trailingSlash: "ignore",
+  trailingSlash: "always",
   integrations: [
     tailwind(
         {
