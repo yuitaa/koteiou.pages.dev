@@ -46,7 +46,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'yuita',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  bio: '',
   links: [
     // Visit https://icones.js.org/ for icon codes
     // `pnpm add @iconify-json/<icon-set-name>`
