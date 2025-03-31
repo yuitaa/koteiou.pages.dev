@@ -3,7 +3,12 @@
         @apply text-3xl;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         .anchor {
             @apply transition -m-0.5 ml-[0.2ch] p-0.5 select-none opacity-0 no-underline !important;
 
@@ -20,10 +25,10 @@
     }
 
     a:not(.no-styling) {
-        @apply relative bg-none link font-medium text-[var(--primary)]
-        underline decoration-[var(--link-underline)] decoration-1 decoration-dashed underline-offset-4;
+        @apply relative bg-none link font-medium text-[var(--primary)] underline decoration-[var(--link-underline)] decoration-1 decoration-dashed underline-offset-4;
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
             @apply decoration-transparent;
         }
     }
@@ -32,14 +37,17 @@
         @apply bg-[var(--inline-code-bg)] text-[var(--inline-code-color)] px-1 py-0.5 rounded-md overflow-hidden;
 
         font-family: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
         &:before {
-            content:none;
+            content: none;
         }
+
         &:after {
-            content:none;
+            content: none;
         }
 
         counter-reset: line;
+
         span.line {
             &:before {
                 @apply text-white/25 mr-4 w-4 inline-block;
@@ -47,7 +55,9 @@
                 counter-increment: line;
                 direction: rtl;
             }
-            &:last-child:empty, &:last-child:has(> span:empty:only-child) {
+
+            &:last-child:empty,
+            &:last-child:has(> span:empty:only-child) {
                 display: none;
             }
         }
@@ -66,7 +76,8 @@
         }
     }
 
-    ul, ol {
+    ul,
+    ol {
         li::marker {
             @apply text-[var(--primary)];
         }
@@ -81,9 +92,157 @@
         }
 
         /* Remove the double quotes from default styles */
-        p:before, p:after {
+        p:before,
+        p:after {
             @apply content-none;
         }
 
+    }
+}
+
+.rlc-container {
+    width: 100%;
+    max-width: 800px;
+    max-height: 130px;
+    margin: 0 auto 2rem;
+    background: var(--license-block-bg);
+
+    text-decoration: none;
+
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+
+    transition:
+        background 200ms ease-in-out 0s,
+        box-shadow 200ms ease-in-out 0s;
+}
+
+.rlc-container:hover {
+    background-color: var(--btn-regular-bg-hover);
+}
+
+.rlc-info {
+    overflow: hidden;
+    padding: 1rem;
+    text-align: left;
+    flex: 4 1 100px;
+    align-items: flex-start;
+    text-decoration: none;
+    min-height: 100px;
+}
+
+.rlc-title {
+    font-size: 1.25rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.rlc-description {
+    font-size: 0.875rem;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    line-height: 1.4rem;
+    max-height: 3rem;
+    overflow: hidden;
+    flex-grow: 1;
+    padding-bottom: 4px;
+    color: var(--tw-prose-body);
+}
+
+.rlc-url-container {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+}
+
+.rlc-favicon {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.rlc-url {
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.rlc-image-container {
+    position: relative;
+    flex: 1 1 100px;
+    padding: 0.3rem;
+    aspect-ratio: 1 / 1;
+}
+
+.rlc-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+@media (max-width: 768px) {
+    .rlc-container {
+        flex-direction: column;
+        max-height: unset;
+    }
+
+
+    .rlc-image-container {
+        order: -1;
+        flex: none;
+        width: 100%;
+
+        padding: 0.5rem;
+        aspect-ratio: 1.91 / 1;
+    }
+
+    .rlc-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem 0.75rem 0 0;
+    }
+
+
+    .rlc-title {
+        white-space: normal;
+        overflow: visible;
+    }
+
+
+    .rlc-description {
+        -webkit-line-clamp: unset;
+        line-clamp: unset;
+        -webkit-box-orient: unset;
+        display: block;
+        max-height: none;
+        height: auto;
+        overflow: visible;
+        flex-grow: unset;
+    }
+
+    .rlc-info {
+        overflow: visible;
+        min-height: unset;
+    }
+
+    .rlc-url {
+        white-space: normal;
+        overflow-wrap: break-word;
     }
 }
