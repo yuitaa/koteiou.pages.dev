@@ -5,7 +5,7 @@ description: ''
 image: '../../../assets/images/girumasu-teiji-1.png'
 tags: [JavaScript]
 category: 'アニメ'
-draft: false 
+draft: false
 lang: ''
 ---
 夜間、アニメ [『ギルドの受付嬢ですが、残業は嫌なのでボスをソロ討伐しようと思います』](https://girumasu.com/) の公式サイトへアクセスすると、サムネイル画像のように「**本日の営業は終了いたしました**」と表示される。
