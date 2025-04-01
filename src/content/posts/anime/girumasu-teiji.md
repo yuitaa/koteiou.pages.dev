@@ -3,7 +3,7 @@ title: 「ギルます」の定時を調べてみた
 published: 2025-03-31
 description: ''
 image: '../../../assets/images/girumasu-teiji-1.png'
-tags: [アニメ, JavaScript]
+tags: [JavaScript]
 category: 'アニメ'
 draft: false 
 lang: ''

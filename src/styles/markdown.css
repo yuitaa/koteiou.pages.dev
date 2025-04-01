@@ -24,6 +24,10 @@
         }
     }
 
+    p {
+        font-size: 1.15em;
+    }
+
     a:not(.no-styling) {
         @apply relative bg-none link font-medium text-[var(--primary)] underline decoration-[var(--link-underline)] decoration-1 decoration-dashed underline-offset-4;
 
