@@ -2,7 +2,7 @@
 title: 「ギルます」の定時を調べてみた
 published: 2025-03-31
 description: ''
-image: '../../../assets/images/girumasu-teiji-1.png'
+image: '../../../assets/images/2025/girumasu-teiji-1.png'
 tags: [JavaScript]
 category: 'アニメ'
 draft: false
@@ -11,7 +11,7 @@ lang: ''
 夜間、アニメ [『ギルドの受付嬢ですが、残業は嫌なのでボスをソロ討伐しようと思います』](https://girumasu.com/) の公式サイトへアクセスすると、サムネイル画像のように「**本日の営業は終了いたしました**」と表示される。
 残業ボタンを押すことでサイトに入ることができる。定時が気になったので調べてみる。
 
-![残業ボタン](@/assets/images/girumasu-teiji-2.png)
+![残業ボタン](@/assets/images/2025/girumasu-teiji-2.png)
 
 ソースを調べてみたところ、`resources/js/base.js` に定時判定をしている部分があった。
 
