@@ -3,7 +3,7 @@ title: 退屈したら死ぬ
 published: 2025-04-04
 description: '『この恋で鼻血を止めて』視聴記録'
 image: ''
-tags: [未完結, 視聴記録]
+tags: [未完結, 視聴記録, 2025春アニメ]
 category: 'アニメ'
 draft: false
 lang: ''
