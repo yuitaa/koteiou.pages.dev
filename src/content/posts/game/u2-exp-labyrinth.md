@@ -2,7 +2,7 @@
 title: U2に新ステージが追加！！！
 published: 2025-04-09
 description: 'v-463-c31e545 まとめ'
-image: ''
+image: '../../../assets/images/2025/labyrinth-1.jpg'
 tags: [Unrailed2, experimental]
 category: 'ゲーム'
 draft: false
